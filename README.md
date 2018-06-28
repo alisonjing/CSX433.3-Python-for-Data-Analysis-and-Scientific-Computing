@@ -47,7 +47,7 @@ Referencing packages
 	keras		2.2.0
 	plotly		2.6.0
 	cufflinks   	0.13.0	
-  tensorflow    1.15.0
+        tensorflow    1.15.0
 
 
 Running the Project:	
@@ -74,53 +74,3 @@ Step 3 Run on Machine Learning part of the project
 Run the jupyter notebook titled 
 
 “Bitcoin_ML_LSTM_part.ipynb”
-
-
-Model Performance and Evaluation:
-
-For basic analysis we used seaborn and plotly’s iplot feature to analyze the price trend.
-Then we proceeded with some statistical analysis using statsmodel. Timeseries and ARIMA 
-to observe the trend over a year with a weekly window on the axis. We used two Machine Learning models – Linear Regression and RNN with LSTM(Long Short Term Memory) method
-for prediction. 
-
-Our linear regression model was using BitcoinHistoricalDataByDay2010to2018.xlsx dataset that contains daily rate from early 2010 to 6/14/2018. We split the training and testing data to 70/30 ratio, and using the linear regression lmfeature from PythonScikit-learn module (sklearn.linear_model) and overall has an accuracy rate of 99% success rate. 
-
-
-
-Our dataset used for Recurrent Neuro Network using LSTM model is using the API of Cryptocompare.com’s historical data up to the current day. We used Keras to carry out implementation phase in which the training/test is 80/20 split, used Adam optimizer as the
-Algorithm for LSTM because it’s straightforward and computationally efficient, requiring 
-Little memory and very well suited for non- stationary objectives like cryptocurrency price movement. We set the parameters as follows:
-# data parameters
-window_len = 7
-test_size = 0.1
-zero_base = True
-
-# model parameters
-lstm_neurons = 20
-epochs = 50
-batch_size = 4
-loss = 'mae'
-dropout = 0.25
-optimizer = 'adam'
-_________________________________________________________________
-Layer (type)                Output Shape              Param #   
-=================================================================
-lstm_1 (LSTM)               (None, 20)                2160      
-_________________________________________________________________
-dropout_1 (Dropout)         (None, 20)                0         
-_________________________________________________________________
-dense_1 (Dense)             (None, 1)                 21        
-_________________________________________________________________
-activation_1 (Activation)   (None, 1)                 0         
-=================================================================
-Total params: 2,181
-Trainable params: 2,181
-Non-trainable params: 0
-
-Overall we have 98% model performance accuracy rate for the bitcoin price trend prediction, and we predicted the bitcoin price will go below $6,000 in the next month.
-
-
-
-
-
-
