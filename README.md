@@ -28,12 +28,14 @@ The purpose of this project is to create a basic economic prediction model to es
 
 Analyzing and Data Wrangling: 
 
- 	As we clean the data from our hour by hour, day to day, month to month, and year to year we removed commas, percent signs and manipulated the date to make the xslx and csv file more readable in Jupyter. When uploading the files into Jupyter we checked each data set and looked up the max and min values of the parameters. This data allowed us to find the date of these events and make meaningful graphs to visually plot the moving prices of the different cryptocurrencies to show the volatility and stabilities of the coins in a time series graph. 
-   	We tested our data set in different plots such as line graph, box plot, pairplot, histograms, sma, cma, and heatmaps, ARIMA models. 
+As we clean the data from our hour by hour, day to day, month to month, and year to year we removed commas, percent signs and manipulated the date to make the xslx and csv file more readable in Jupyter. When uploading the files into Jupyter we checked each data set and looked up the max and min values of the parameters. This data allowed us to find the date of these events and make meaningful graphs to visually plot the moving prices of the different cryptocurrencies to show the volatility and stabilities of the coins in a time series graph. 
+
+We tested our data set in different plots such as line graph, box plot, pairplot, histograms, sma, cma, and heatmaps, ARIMA models. 
 
 Environment used to Setup and run the Project:
 
-	The project is developed using the following environment:
+The project is developed using the following environment:
+
 Mac 
   	Python 3.6.2 Andaconda custom (64-bit) Jupyter Notebook environment (version 5.0.0)
 	
