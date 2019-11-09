@@ -6,7 +6,7 @@ CSX433.7 Machine Learning with Tensorflow
 
 Final Project -- Bitcoin Cryptocurrency Price Prediction using RNN, LSTM with Tensorflow
 
-Alison Jing Huang  -- jing01ucsb@gmail.com
+Alison Jing Huang  -- alisonjhuang@gmail.com
 Github: https://github.com/alisonjing
 
 Elaine Phan  --  elainph@gmail.com
